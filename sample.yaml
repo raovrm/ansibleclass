@@ -4,4 +4,4 @@ tasks:
 - name: code tp install git
   yum:
    name: git
-   sate: ptesent
+   state: present
