@@ -1,6 +1,7 @@
-name: play on sample excecution
-hosts: client1
-tasks:
+-
+ name: play on sample excecution
+ hosts: client1
+ tasks:
 - name: code tp install git
   yum:
    name: git
