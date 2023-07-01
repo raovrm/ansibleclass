@@ -1,0 +1,14 @@
+-
+ name: removefoder
+ hosts: all
+ tasks: 
+ - name: remove net-tools app
+   command: 
+    cmd: yum remove net-tools -y
+
+ - name: code to start for https app
+   command: 
+    cmd: service httpd start
+
+
+
