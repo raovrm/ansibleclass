@@ -1,0 +1,10 @@
+-
+ name: use case of service module
+ hosts: client1
+ tasks: 
+ - name: code to stop services of httpd
+   service: 
+    name: httpd
+    state: stopped
+       
+ 
