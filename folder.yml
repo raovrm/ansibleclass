@@ -1,0 +1,8 @@
+-
+ name: create foder
+ hosts: all
+ tasks: 
+ - name: folder under opt
+   command: 
+    cmd: mkdir /opt/bobby
+  
