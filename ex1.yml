@@ -1,0 +1,12 @@
+-
+ name: PB of Sample excute
+ hosts: client1
+ tasks: 
+  - name: code for git install
+    yum:
+     name: git
+     state: present
+     
+
+
+    
