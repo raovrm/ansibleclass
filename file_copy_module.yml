@@ -1,0 +1,15 @@
+- 
+ name: file and copy module 
+ hosts: all
+ tasks: 
+ -  name: code file module 
+    file:
+     path: /opt/notes.txt 
+     state: touch 
+
+ -  name: code to massage into file 
+    copy: 
+     dest: /opt/notes.txt 
+     content: 'Hello World'
+    
+
