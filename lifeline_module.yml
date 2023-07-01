@@ -1,0 +1,28 @@
+- 
+ name: if file is not avaliable create 
+ hosts: all 
+ tasks: 
+- 
+  name: code to create folder 
+  file: 
+   path: /opt/india 
+   state: directory
+
+- 
+ name: create a file 
+ file: 
+   path: /opt/india/russia.txt 
+   state: touch
+- 
+ name: code to write contect
+ lineinlife: 
+   path: /opt/india/russia.txt 
+   line: 'HELLO WORLD'
+
+- 
+ name: user permession 
+ file: 
+   path: /opt/india/russia.txt 
+   mode: u+x
+
+
